@@ -106,7 +106,7 @@ p {
   }
 
   // Lista de números para redirecionar
-  let phoneNumbers = ["5537998638201"];
+  let phoneNumbers = ["5537998312299"];
   
   // Obtém o índice do último número usado
   let currentNumberIndex = getLocalStorage("lastNumberIndex") || 0;
@@ -118,7 +118,7 @@ p {
   setLocalStorage("lastNumberIndex", currentNumberIndex);
 
   // Gera o link de redirecionamento
-  let redirect_link = `https://api.whatsapp.com/send?phone=${phoneNumbers[currentNumberIndex]}&text=Olá,%20Dudu!%20Vi%20seu%20vídeo%20e%20me%20interessei,%20pode%20me%20explicar%20como%20eu%20começo?`;
+  let redirect_link = `https://api.whatsapp.com/send?phone=${phoneNumbers[currentNumberIndex]}&text=Oi%20Dudu,%20quero%20saber%20como%20e%20funciona!`;
 
   // Redireciona imediatamente
   window.location.href = redirect_link;
